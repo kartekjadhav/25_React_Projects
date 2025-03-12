@@ -5,6 +5,7 @@ import './App.css'
 import Accordian from './components/Accordian/accordian'
 import RandomColor from './components/random-color/random_color'
 import StarRating from './components/star-ratings/StarRating'
+import Image_Slider from './components/Image_Slider/Image_Slider'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
      <Accordian/>
      <RandomColor/>
      <StarRating/>
+     <Image_Slider url={'https://picsum.photos/v2/list?'} pages={2} limit={5} />
     </div>
   )
 }
