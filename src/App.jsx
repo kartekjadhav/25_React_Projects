@@ -6,7 +6,7 @@ import Accordian from './components/Accordian/accordian'
 import RandomColor from './components/random-color/random_color'
 import StarRating from './components/star-ratings/StarRating'
 import Image_Slider from './components/Image_Slider/Image_Slider'
-
+import Load_more from './components/Load_more/Load_more'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -16,6 +16,7 @@ function App() {
      <RandomColor/>
      <StarRating/>
      <Image_Slider url={'https://picsum.photos/v2/list?'} pages={2} limit={5} />
+     <Load_more url={'https://dummyjson.com/products'} limit={20} skip={20} />
     </div>
   )
 }
