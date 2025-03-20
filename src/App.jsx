@@ -9,11 +9,13 @@ import Image_Slider from './components/Image_Slider/Image_Slider'
 import Load_more from './components/Load_more/Load_more'
 import Tree_View from './components/Tree_View/Tree_View'
 import QR from './components/QR_Code/QR'
+import useOnlineStatus from './components/isOnline.js/isOnline'
 function App() {
   const [count, setCount] = useState(0)
-
+  const isOnline = useOnlineStatus();
   return (
     <div className="flex flex-col items-center">
+     {isOnline ? <h3>Connected ✅</h3> : <h3>Disconnected ❌</h3>}
      <Accordian/>
      <RandomColor/>
      <StarRating/>

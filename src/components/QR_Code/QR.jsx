@@ -20,7 +20,8 @@ const QR = () => {
                     value={input}
                     />
                 <button
-                    className="border rounded-lg px-2 py-1"
+                    disabled={(input && input.trim()!=='') ? false: true}
+                    className="border cursor-pointer rounded-lg px-2 py-1"
                     onClick={handleChange}>
                     Submit
                 </button>
