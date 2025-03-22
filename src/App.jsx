@@ -10,6 +10,7 @@ import Load_more from './components/Load_more/Load_more'
 import Tree_View from './components/Tree_View/Tree_View'
 import QR from './components/QR_Code/QR'
 import useOnlineStatus from './components/isOnline.js/isOnline'
+import DarkLightMode from './components/DarkLightMode/DarkLightMode'
 function App() {
   const [count, setCount] = useState(0)
   const isOnline = useOnlineStatus();
@@ -23,6 +24,7 @@ function App() {
      <Load_more url={'https://dummyjson.com/products'} limit={20} skip={20} />
      <Tree_View/>
      <QR/>
+     <DarkLightMode/>
     </div>
   )
 }
