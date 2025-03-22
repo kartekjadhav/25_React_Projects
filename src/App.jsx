@@ -11,11 +11,14 @@ import Tree_View from './components/Tree_View/Tree_View'
 import QR from './components/QR_Code/QR'
 import useOnlineStatus from './components/isOnline.js/isOnline'
 import DarkLightMode from './components/DarkLightMode/DarkLightMode'
+import ScroolIndicator from './components/Scrool_Indicator/ScroolIndicator'
+
 function App() {
   const [count, setCount] = useState(0)
   const isOnline = useOnlineStatus();
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center relative">
+     <ScroolIndicator/>
      {isOnline ? <h3>Connected ✅</h3> : <h3>Disconnected ❌</h3>}
      <Accordian/>
      <RandomColor/>
