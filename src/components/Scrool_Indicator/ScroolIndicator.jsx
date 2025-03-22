@@ -19,7 +19,7 @@ const ScroolIndicator = () => {
     }, [])
     
     return (
-        <div className="fixed h-10 bg-black text-white pt-2 w-full text-center z-10">
+        <div className="fixed top-0 h-10 bg-black text-white pt-2 w-full text-center z-10">
             <h2>Scroll Height Indicator</h2>
             <div className="scrollIndicator h-3/12 bg-pink-700 rounded-lg" style={{width: `${scrollHeight}%`}}></div>
         </div>

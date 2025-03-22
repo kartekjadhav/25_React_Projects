@@ -12,7 +12,7 @@ import QR from './components/QR_Code/QR'
 import useOnlineStatus from './components/isOnline.js/isOnline'
 import DarkLightMode from './components/DarkLightMode/DarkLightMode'
 import ScroolIndicator from './components/Scrool_Indicator/ScroolIndicator'
-
+import TabContainer from './components/CustomTabs/TabContainer'
 function App() {
   const [count, setCount] = useState(0)
   const isOnline = useOnlineStatus();
@@ -28,6 +28,7 @@ function App() {
      <Tree_View/>
      <QR/>
      <DarkLightMode/>
+     <TabContainer/>
     </div>
   )
 }
